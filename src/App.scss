@@ -1,0 +1,51 @@
+@import "./assets/color";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.link{
+  text-decoration: none;
+
+  &:hover{
+    /* text-decoration: underline; */
+  }
+}
+
+
+
+button{
+  border: none;
+  background-color: transparent;
+}
+
+p,h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0;
+}
+input{
+  outline-color: blue;
+  outline-width: 1px;
+}
+select{
+  outline-color: blue;
+  outline-width: 1px;
+  border: none;
+}
+ul,li{
+  list-style: none;
+}
+.app{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    'Navbar Navbar'
+    'menu content' ;
+    position: relative;
+  .main__body{
+    min-height: 83vh;
+    grid-area: content;
+    display: none;
+  }
+}

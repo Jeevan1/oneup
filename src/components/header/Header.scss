@@ -1,0 +1,25 @@
+@import "../../assets/color";
+.Header{
+    position: fixed;
+    // top: 0; /* Stick to the top of the container */
+    background-color: #ffffff;
+    // height: 50px;
+    z-index: 999;
+    &__1{
+      
+        .more__link{
+            color: $gray;
+            position: relative;
+            cursor: pointer;
+
+            .sub__links{
+                position: absolute;
+                top: 160%;
+            }
+        }
+    }
+    &__2{
+        position: absolute;
+        right: 0;
+    }
+}
